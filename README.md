@@ -1,4 +1,8 @@
 # PR2-Project
+Created by Christian James Santos for the subject Practical Reasearch 2
 
-# Created by Christian James Santos
-# For the subject Practical Research 2
+# Goals
+-[x] Structured Homepage
+-[x] Wikipedia API
+-[] Chat Open AI
+-[] Survey
