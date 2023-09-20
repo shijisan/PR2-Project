@@ -2,7 +2,7 @@
     height: 45vh;
     padding: 0;
     margin: 0;
-    background-image: url(/images/space-homepage.jpg);
+    background-image: url(images/space-homepage.jpg);
     background-size: cover;
     display: flex;
     align-items: center;
