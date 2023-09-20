@@ -14,14 +14,14 @@ function createNavbar() {
 
     // Create the logo image
     const logoImg = document.createElement("img");
-    logoImg.src = "logo/logo.png"; // Set the image source
+    logoImg.src = "/logo/logo.png"; // Set the image source
     logoImg.alt = "Logo"; // Set an alt text for accessibility (describe the image)
     logoImg.classList.add("logo"); // Add the "logo" class to the image
 
     // Create the brand link
     const brandLink = document.createElement("a");
     brandLink.className = "navbar-brand";
-    brandLink.href = "#";
+    brandLink.href = "/index.html";
     brandLink.textContent = "ICTpedia";
 
     // Append the logo and brand name to the logoAndBrandDiv
@@ -49,8 +49,8 @@ function createNavbar() {
 
     // Create individual list items with different links
     const navItems = [
-        { text: "Home", link: "./index.html" },
-        { text: "Game", link: "./game/game.html" },
+        { text: "Home", link: "/index.html" },
+        { text: "Game", link: "/game/game.html" },
         { text: "A.I", link: "ai.html" },
         { text: "Survey", link: "survey.html" },
         { text: "Login", link: "login.html" }
@@ -80,6 +80,15 @@ function createNavbar() {
     return nav;
 }
 
-// Call the function to create the navigation bar and append it to the body
+// Call the function to create the navigation bar
 const navbar = createNavbar();
-document.body.appendChild(navbar);
+
+// Find the element with class "nav"
+const navElement = document.querySelector(".nav");
+
+// Append the navigation bar to the "nav" element
+if (navElement) {
+    navElement.appendChild(navbar);
+} else {
+    console.error("Element with class 'nav' not found.");
+}
