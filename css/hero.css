@@ -1,0 +1,30 @@
+.hero{
+    height: 45vh;
+    padding: 0;
+    margin: 0;
+    background-image: url(/images/space-homepage.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.hero button{
+    font-family: "poppins";
+    padding: 10px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.25);    
+    border: none;
+    color: rgb(212, 175, 255);
+}
+.hero button:hover{
+    padding: 15px;
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.75);
+    color: rgb(132, 0, 255);
+}
+.hero h2{
+    color: white;
+    font-family: "share tech mono";
+    text-align: center;
+}
