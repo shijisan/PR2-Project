@@ -3,59 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICTpedia</title>
+    <title>Document</title>
 
     <!-- LINKS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/nav.css">
-    <link rel="stylesheet" href="css/hero.css">
-    <link rel="stylesheet" href="css/sStars.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/homewiki.css">
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/sStars.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="css/tabs.css">
 
 </head>
 <body>
-    <!-- NAV -->
-    <section class="nav">
 
-    </section>
+    <div class="navContainer">
 
-    <!-- HERO -->
-    <section>
-    <div class="hero container-fluid">
-        <section class="sStars">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </section>
-        <h2>Test your knowledge in ICT related topics!</h2>
-        <button onclick="redirectToQuiz()">TAKE QUIZ!</button>
+        <div id="nav"></div>
+
     </div>
+    
+    <div id="hero"></div>
+
+    <div class="tabsCont container-fluid">
+        <div class="tab">
+            <button class="tablinks active" onclick="tabs(event, 'Wiki')">Wiki</button>
+            <button class="tablinks" onclick="tabs(event, 'Game')">Quizbee</button>
+            <button class="tablinks" onclick="tabs(event, 'Survey')">Survey</button>
+          </div>
+          
+          <div id="Wiki" class="tabcontent">
+            <h1>ICTpedia Search!</h1>
+            <input type="text" id="searchInput" placeholder="Search for ICT related topics!">
+            <button onclick="redirectToResults()">Search</button>
+          </div>
+          
+          <div id="Game" class="tabcontent">
+            <h3>Paris</h3>
+            <p>Paris is the capital of France.</p> 
+          </div>
+          
+          <div id="Survey" class="tabcontent">
+            <h3>Tokyo</h3>
+            <p>Tokyo is the capital of Japan.</p>
+          </div>
+    </div>
+
+    <div class="aboutUs container">
+        <h1 class="text-center">About Us</h1>
+        <!-- Placeholder profile picture -->
+        <img class="profile-pic rounded mx-auto d-block" src="images/profilepic.png" width="150px" height="150px" alt="Profile Picture"><br>
+        <h2>Hello, I am Christian James Santos</h2>
+        <p>I am a student at SNHS pursuing ICT CSS. I am also the developer of this website, and my primary goal is to assist fellow students in their learning journey using this platform. Through the process of developing this website, I aim to enhance my own skills and knowledge as well.</p>
+        <p>Special thanks to Me, Myself, and I for having more brain cells than the average student.</p>
+    </div>
+
+    <section class="scripts">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="nav.js" defer></script>
+        <script src="hero.js" defer></script>
+        <script src="js/tabs.js"></script>
+        <script src="js/wikiSearch.js"></script>
+        <script src="js/redirectResults.js"></script>
+
     </section>
 
-    <section class="homeWiki">
-
-    </section>
-
-    <div id="pagination"></div>
-
-    <footer>©2023 Christian James Santos</footer>
-
-
-    <script src="js/hero.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/homewiki.js"></script>
-    <script src="js/homewikifunc.js"></script>
 </body>
 </html>

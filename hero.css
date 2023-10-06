@@ -1,0 +1,24 @@
+#hero{
+    background-image: url(images/space-homepage.jpg);
+    background-size: cover;
+    height: 40vh;
+}
+.heroTextCont{
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+}
+.heroText{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.heroText h1{
+    font-family: "share tech mono";
+}
+.heroText h4{
+    font-family: "lato";
+}

@@ -1,0 +1,70 @@
+.tabsCont {
+    padding: 0;
+}
+
+.tab {
+    display: flex;
+    margin-bottom: 10px; /* Add margin between tabs */
+}
+
+.tablinks {
+    width: 33.33%;
+    padding: 20px;
+    background-color: #888dff;
+    color: #fff;
+    border: none;
+    border-left: 1px solid rgb(69, 0, 139);
+    border-right: 1px solid rgb(69, 0, 139);
+    cursor: pointer;
+    text-align: center;
+}
+.tablinks:hover{
+    background-color: #8441ff;
+}
+.active{
+    border-top: 3px solid #d1bcff;
+}
+.tabcontent {
+    display: none;
+    padding: 20px;
+    height: 39vh;
+}
+
+.tabcontent p {
+    margin: 0;
+}
+#Wiki{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;   
+    margin-bottom: 20px;
+}
+#Wiki h1{
+    font-family: "share tech mono";
+    font-size: 4rem;
+    text-shadow: #5c5c5c -2px 2px;
+    color: rgb(231, 231, 231);
+    background-color: #888dff;
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+#Wiki input{
+    border-radius: 30px;
+    padding: 20px;
+    width: 80%;
+}
+#Wiki button{
+    padding: 20px 40px;
+    border-radius: 30px;
+    margin-left: -60px;
+    background-color: #8441ff;
+    color: white;
+}
+
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .tab {
+        flex-basis: calc(50% - 20px); /* Two tabs per row on smaller screens */
+    }
+}
